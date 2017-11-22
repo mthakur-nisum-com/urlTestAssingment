@@ -1,0 +1,49 @@
+.add-link-btn {
+    margin: 0px 0 0 0;
+}
+
+.url-list {
+  padding-left: 0;
+  margin:20px 0 0 0;
+}
+
+.url-list li {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 20px 20px 0;
+    cursor: pointer;
+    display: inline-block;
+    /* float: left; */
+    width: 188px;
+    position: relative;
+}
+.delete-btn {
+	position: absolute;
+    top: 3px;
+    right: 8px;
+    display: none;
+}
+.url-list li a {
+    text-align: center;
+}
+
+.url-list li:nth-child(even) {
+    background: #F1f1f1;
+}
+
+.url-list li:nth-child(even):hover {
+    background: #FFF;
+    border: 1px solid #F1f1f1;
+}
+
+.url-list li:nth-child(odd) {
+    border: 1px solid #F1f1f1;
+}
+
+.url-list li:nth-child(odd):hover {
+    background: #F1f1f1;
+}
+.url-list li:hover > .delete-btn {
+	display: block;
+}
