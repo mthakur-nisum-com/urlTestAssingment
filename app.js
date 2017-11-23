@@ -54,7 +54,7 @@ function encodeUrl(num) {
     }
     return sb;
 }
-app.post('/addLink', function(req, res) {
+app.post('/links', function(req, res) {
     if (req.body.linkValue) {
         var result = encodeUrl(req.body.linkValue),
             repsoneObj = new Array();
@@ -104,7 +104,7 @@ app.get('/links', function(req, res) {
         }
     });
 })
-app.delete('/deleteLink', function(req, res) {
+app.delete('/links', function(req, res) {
 	var   repsoneObj = new Array();
     if (req.sessionID) {
         database.deleteRecord({ userName: req.sessionID, id: req.query.id }).then(function(docs, error) {

@@ -2383,7 +2383,7 @@ module.exports = {
 module.exports = {
 	addLink: {
 		actionType: 'add_link',
-		url: '/addLink'
+		url: '/links'
 	},
 	getLinks: {
 		actionType: 'all_links',
@@ -2391,7 +2391,7 @@ module.exports = {
 	},
 	deleteLink: {
 		actionType: 'delete_link',
-		url: '/deleteLink'
+		url: '/links'
 	}
 };
 
