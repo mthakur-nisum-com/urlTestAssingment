@@ -2316,10 +2316,6 @@ module.exports = {
 "use strict";
 
 
-var _constants = __webpack_require__(35);
-
-var _constants2 = _interopRequireDefault(_constants);
-
 var _axios = __webpack_require__(87);
 
 var _axios2 = _interopRequireDefault(_axios);
@@ -2327,27 +2323,6 @@ var _axios2 = _interopRequireDefault(_axios);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = {
-
-    addLink: function addLink(linkObj) {
-        return {
-            type: _constants2.default.addLink.actionType,
-            linkObj: linkObj,
-            url: _constants2.default.addLink.url
-        };
-    },
-    getAllLinks: function getAllLinks() {
-        return {
-            type: _constants2.default.getLinks.actionType,
-            url: _constants2.default.getLinks.url
-        };
-    },
-    deleteLink: function deleteLink(linkObj) {
-        return {
-            type: _constants2.default.deleteLink.actionType,
-            linkObj: linkObj,
-            url: _constants2.default.deleteLink.url
-        };
-    },
     handleAjax: function handleAjax(dispatch, userObj) {
         (0, _axios2.default)({
             method: userObj.requestType,
