@@ -1,14 +1,17 @@
 module.exports ={
 	addLink:{
-		actionType:'add_link',
-		url:'/links'
+		actionType:'links',
+		url:'/links',
+		requestType:'post'
 	},
 	getLinks:{
-		actionType:'all_links',
-		url:'/links'
+		actionType:'links',
+		url:'/links',
+		requestType:'get'
 	},
 	deleteLink:{
-		actionType:'delete_link',
-		url:'/links'
+		actionType:'links',
+		url:'/links',
+		requestType:'delete'
 	}
 }
